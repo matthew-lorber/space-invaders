@@ -1,0 +1,91 @@
+@font-face {
+    font-family: gothic;
+    src: url(DidactGothic-Regular.ttf);
+    font-display: block;
+}
+body {
+    font-family:gothic;
+    line-height:1;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+}
+#head {
+    font-size:1.5rem;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:10vh;
+    background:olive;
+}
+#score {
+    width:50vw;
+    float:left;
+}
+#lives {
+    width:50vw;
+    float:left;
+}
+#invaders {
+    position:fixed;
+    top:10vh;
+    left:0;
+    width:100vw;
+    height:60vh;
+    background:yellow;
+}
+#shields {
+    position:fixed;
+    top:70vh;
+    left:0;
+    width:100vw;
+    height:20vh;
+    background:green;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#player-area {
+    position:fixed;
+    top:90vh;
+    left:0;
+    width:100vw;
+    height:10vh;
+    background:purple;
+}
+#player {
+    width:50px;
+    height:25px;
+    background:violet;
+    transform-origin:center center;
+    position:absolute;
+}
+
+
+/* SHIELDS */
+.shield-div {
+    float:left;
+    width:25vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.shield {
+    width:100px;
+    height:60px;
+    background:orange;
+}
+
+/* LIVES */
+.life {
+    float:left;
+    margin-right:10px;
+    width:50px;
+    height:25px;
+    background:violet;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>space-invaders</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <section id="wrapper">
+        <!-- SCORE AREA -->
+        <article id="head">
+            <section id="score">SCORE: <span id="score"></span></section>
+            <section id="lives">
+                <div>LIVES: </div>
+                <div class="life" id="life1"></div>
+                <div class="life" id="life2"></div>
+            </section>
+        </article>
+        <!-- INVADERS AREA -->
+        <article id="invaders">
+            <div class="invader"></div>
+        </article>
+        <!-- SHIELDS AREA -->
+        <article id="shields">
+            <div class="shield-div"><div class="shield" id="shield1"></div></div>
+            <div class="shield-div"><div class="shield" id="shield2"></div></div>
+            <div class="shield-div"><div class="shield" id="shield3"></div></div>
+            <div class="shield-div"><div class="shield" id="shield4"></div></div>
+        </article>
+        <!-- PLAYER AREA -->
+        <article id="player-area">
+            <div id="player"></div>
+        </article>
+    </section>
+    <script src="./jquery.3.4.1.min.js"></script>
+    <script src="./anime.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
