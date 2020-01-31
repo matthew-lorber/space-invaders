@@ -8,35 +8,47 @@
     <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
+    <!-- GAMEBOARD AREA -->
     <section id="wrapper">
         <!-- SCORE AREA -->
         <article id="head">
             <section id="score">SCORE: <span id="score"></span></section>
-            <section id="lives">
-                <div>LIVES: </div>
-                <div class="life" id="life1"></div>
-                <div class="life" id="life2"></div>
-            </section>
+            <button id="start">start</button>
         </article>
         <!-- INVADERS AREA -->
         <article id="invaders">
-            <div class="invader">
-            </div>
+            <div id="inv-row0" class="inv-row"></div>
+            <div id="inv-row1" class="inv-row"></div>
+            <div id="inv-row2" class="inv-row"></div>
+            <div id="inv-row3" class="inv-row"></div>
+            <div id="inv-row4" class="inv-row"></div>
         </article>
         <!-- SHIELDS AREA -->
         <article id="shields">
-            <div class="shield-div"><div class="shield" id="shield1"></div></div>
-            <div class="shield-div"><div class="shield" id="shield2"></div></div>
-            <div class="shield-div"><div class="shield" id="shield3"></div></div>
-            <div class="shield-div"><div class="shield" id="shield4"></div></div>
+            <div class="shield-div"><div class="shield" id="shield1"><img src="./shield.svg" alt="shield"/></div></div>
+            <div class="shield-div"><div class="shield" id="shield2"><img src="./shield.svg" alt="shield"/></div></div>
+            <div class="shield-div"><div class="shield" id="shield3"><img src="./shield.svg" alt="shield"/></div></div>
+            <div class="shield-div"><div class="shield" id="shield4"><img src="./shield.svg" alt="shield"/></div></div>
         </article>
         <!-- PLAYER AREA -->
         <article id="player-area">
-            <div id="player"><svg height="100" width="100">
-                <circle cx="5" cy="5" r="10" stroke="black" stroke-width="3" fill="red" />
-              </svg></div>
+            <div id="player"><img src="./ship.svg" alt="player"/></div>
+            <div id="ground"></div>
+        </article>
+        <!-- EXTRA LIVES -->
+        <article id="extra-lives">
+            <section id="lives">
+                <div class="life" id="life1">
+                    <img src="./ship.svg" alt="extra life"/>
+                </div>
+                <div class="life" id="life2">
+                    <img src="./ship.svg" alt="extra life"/>
+                </div>
+            </section>
         </article>
     </section>
+
+    <!-- SCRIPTS -->
     <script src="./jquery.3.4.1.min.js"></script>
     <script src="./anime.min.js"></script>
     <script src="./index.js"></script>

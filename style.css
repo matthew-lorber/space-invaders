@@ -8,85 +8,172 @@ body {
     line-height:1;
     position:fixed;
     top:0;
-    left:0;
-    width:100vw;
+    left:5vw;
+    width:90vw;
     height:100vh;
     overflow:hidden;
     display:flex;
+    background:#111;
+    color:white;
+}
+#wrapper {
+    width:90%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:5%;
 }
 #head {
     font-size:1.5rem;
-    position: fixed;
+    position: absolute;
     top:0;
     left:0;
-    width:100vw;
-    height:10vh;
-    background:olive;
+    width:100%;
+    height:10%;
+}
+#start {
+    position:absolute;
+    top:0;
+    right:0;
 }
 #score {
-    width:50vw;
+    width:50%;
     float:left;
 }
 #lives {
-    width:50vw;
+    width:50%;
     float:left;
 }
 #invaders {
-    position:fixed;
+    position:absolute;
     top:10vh;
     left:0;
-    width:100vw;
-    height:60vh;
-    background:yellow;
+    width:100%;
+    height:60%;
 }
+.inv-row {
+    position:absolute;
+    width:80%;
+    height:8vh;
+}
+#inv-row0 {
+    top:0;
+}
+#inv-row1 {
+    top:8vh;
+}
+#inv-row2 {
+    top:16vh;
+}
+#inv-row3 {
+    top:24vh;
+}
+#inv-row4 {
+    top:32vh;
+}
+#inv-row5 {
+    top:40vh;
+}
+.invader {
+    width:calc(60vw / 11);
+    display:flex;
+    float:left;
+    align-items:center;
+    justify-content:center;
+}
+img {
+    background:red;
+}
+
+/* SHIELDS */
 #shields {
-    position:fixed;
-    top:70vh;
+    position:absolute;
+    top:70%;
     left:0;
-    width:100vw;
-    height:20vh;
-    background:green;
+    width:100%;
+    height:20%;
     display:flex;
     align-items:center;
     justify-content:center;
 }
+.shield-div {
+    float:left;
+    width:25%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* PLAYER */
 #player-area {
     position:fixed;
     top:90vh;
     left:0;
     width:100vw;
     height:10vh;
-    background:purple;
 }
 #player {
     position:absolute;
-    left:50vw;
-    width:50px;
-    height:25px;
-    background:violet;
-    transform-origin:center center;
-}
-
-
-/* SHIELDS */
-.shield-div {
-    float:left;
-    width:25vw;
+    left:calc(50vw - 50px);
     display:flex;
     align-items:center;
     justify-content:center;
-}
-.shield {
     width:100px;
-    height:60px;
-    background:orange;
+    height:25px;
+    background:rgba(0,0,0,0.01);
+}
+#ground {
+    position:fixed;
+    left:0;
+    bottom:5%;
+    width:100vw;
+    height:1px;
+    border-bottom:1px solid green;
+}
+
+/* BUTTONS */
+button {
+    background:none;
+    color:white;
+    border:none;
+    font-family:gothic;
+    font-weight:600;
+    width:60px;
+}
+button:active,
+button:focus {
+    outline:none;
+    background:rgba(255,255,255,0.3);
+}
+button:hover {
+    cursor:pointer;
 }
 
 /* LIVES */
+#extra-lives {
+    position:absolute;
+    width:50%;
+    bottom:2%;
+    left:5px;
+}
 .life {
     float:left;
     margin-right:10px;
     width:50px;
     height:25px;
-    background:violet;
+}
+
+/* SHOOTING */
+.a-shot {
+    position:fixed;
+    width:6px;
+    height:18px;
+    background:red;
+}
+.shot {
+    position:fixed;
+    top:87vh;
+    width:2px;
+    height:12px;
+    background:green;
 }
